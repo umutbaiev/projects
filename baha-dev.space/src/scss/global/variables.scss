@@ -1,0 +1,131 @@
+$theme: #717171;
+$font: 'Inter';
+
+:root {
+    --theme: #{$theme};
+    --dark: #{darken($theme, 10%)}; 
+    --light: #{lighten($theme, 10%)};
+    --focus: #{transparentize($theme, .7)}; 
+    --opacity: #{transparentize($theme, .9)};
+    --preloader: #{transparentize($theme, .1)};
+    --font: #{$font}, sans-serif;
+    --text: #fff;
+    --text-opacity: rgba(0, 0, 0, 0.1);
+    --grey: rgba(0,0,0,0.4);
+    --placeholder: rgba(0,0,0,0.4);
+    --border: rgba(0,0,0,0.07);
+    --blur: blur(12px);
+    --padding: 7rem;
+    --shadow-s: 0 0.66rem 2rem rgba(0,0,0,0.1);
+    --shadow-m: 0 1rem 3rem rgba(0,0,0,0.1);
+    --shadow-l: 0 1.5rem 4.5rem rgba(0,0,0,0.15);
+    --shadow-btn: 0 0.1rem 2rem rgba(0,0,0,0.2);
+    --container: 128rem;
+    --popup-container: 42rem;
+    --logo: 7rem;
+    --header: 8rem;
+    --fz: 1.6rem;
+    --board-items-padding: 1rem 1.4rem;
+    --section-p: calc((100vw - var(--container)) / 2);
+    --bg: #f9f8f8;
+    --bg-op: rgba(255, 255, 255, 0.7);
+    --grey-bg: rgba(0,0,0,0.05);
+    --block-p: 3.8rem;
+    --separation: 3.5rem;
+    --separation-m: -3.5rem;
+    --separation-s: calc(var(--separation) / 2);
+    --separation-sm: calc(var(--separation-m) / 2);
+    --separation-l: calc(var(--separation) * 2);
+    --separation-lm: calc(var(--separation-m) * 2);
+    --separation-h: calc(var(--separation) / 2);
+    --separation-hm: calc(var(--separation-m) / 2);
+    --xsm-block-p: calc(var(--block-p) * 0.4);
+    --sm-block-p: calc(var(--block-p) * 0.8);
+    --lg-block-p: calc(var(--block-p) * 1.2);
+    --cards-col: 3;
+    --title-w: 2.7;
+    --btn-fz: 1.2rem;
+    --field: 4rem;
+    --field-sm: 3rem;
+    --field-md: 3.5rem;
+    --field-lg: 4.5rem;
+    --label-size: 1rem;
+    --subtitle-size: 1.1rem;
+    --icon-size: 3rem;
+    --icon-size-sm: 1.8rem;
+    --catalog: 4;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767px) {
+
+    :root {
+        --article-half: 100%;
+        --container: calc(100vw - 5rem);
+        --advantages-separation: 1;
+        --programs-separation: 1;
+        --calculator-separation: 1;
+        --block-p: 3.6rem;
+        --separation: 2.3rem;
+        --separation-m: -2.3rem;
+        --btn-fz: 1.3rem;
+        --field: 4.3rem;
+        --field-sm: 3.8rem;
+        --field-lg: 4.8rem;
+        --videos: 1;
+        --cards-col: 1;
+    }
+
+    .sm-white {
+        --bg: #010913;
+        --bg-op: rgba(1, 9, 19, 0.7);
+        --grey-bg: rgba(255,255,255,0.05);
+        --text: #fff;
+        --grey: rgba(255,255,255,0.65);
+        --placeholder: rgba(255,255,255,0.4);
+        --border: rgba(255,255,255,0.1);
+        color: var(--text);
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    :root {
+        --article-half: 70%;
+        --container: calc(100vw - 16rem);
+        --advantages-separation: 2;
+        --programs-separation: 2;
+        --block-p: 3.6rem;
+        --separation: 2.3rem;
+        --separation-m: -2.3rem;
+        --videos: 2;
+        --btn-fz: 1.3rem;
+        --field: 4.8rem;
+        --field-sm: 3.8rem;
+        --field-lg: 5.3rem;
+        --header: 8rem;
+        --cards-col: 2;
+    }
+
+    .md-white {
+        --bg: #010913;
+        --bg-op: rgba(1, 9, 19, 0.7);
+        --grey-bg: rgba(255,255,255,0.05);
+        --text: #fff;
+        --grey: rgba(255,255,255,0.65);
+        --placeholder: rgba(255,255,255,0.4);
+        --border: rgba(255,255,255,0.1);
+        color: var(--text);
+    }
+
+}
+
+@media (max-width: 1399px) and (min-width: 1024px) {
+
+    :root {
+        --container: 100rem;
+    }
+
+}
